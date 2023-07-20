@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to css  -->
+    <link rel="stylesheet" href="./Css/main.css">
+    <!-- link to CDNJS  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Html and Css Form</title>
+</head>
+<body>
+    <div class="wlapper">
+        <div class="wrapper-left">
+            <h2 class="wrapper-title">Welcome Back</h2>
+            <p class="wrapper-text">Welcome back! Please enter your details.</p>
+            <form action="#">
+                <label for="email-user" class="form-label">
+                    Email
+                    <input type="email" name="email-user" id="email-user" class="input" required>
+                </label>
+                <label for="password-user" class="form-label" id="form-password">
+                    Password
+                    <input type="password" name="password-user" id="password-user" class="input" required>
+                    <i class="fa-solid fa-eye-slash" id="show"></i>
+                </label>
+                <div>
+                    <label for="remember">
+                        <input type="checkbox" name="remember" id="remember">
+                        Remember for 30 days
+                    </label>
+                    <p>Forgot password</p>
+                </div>
+                <button type="submit" class="button-sign">Sign in</button>
+               
+                <button type="button" class="button-google" >
+                    <img src="./image/icons8-google.svg" alt="google-icon">
+                    Sign in with Google
+                </button>
+            </form>
+            <span>Dont'have an account? <strong>Sign up for free</strong></span>
+        </div>          
+        <div class="wlapper-right">
+            <span>We've been uesing Untitle to kick start every new project ad can't imagine working without it.</span>
+        </div>
+    </div>
+
+
+    <!-- Js link to  -->
+    <script src="./app.js"></script>
+</body>
+</html>
